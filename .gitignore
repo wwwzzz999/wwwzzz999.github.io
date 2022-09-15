@@ -20,3 +20,6 @@ yarn-error.log*
 # Local Netlify folder
 .netlify
 netlify
+
+#blog模板template.md
+src/pages/blog/template.md

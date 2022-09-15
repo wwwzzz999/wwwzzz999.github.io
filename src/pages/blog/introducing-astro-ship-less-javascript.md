@@ -4,7 +4,7 @@ title: Introducing Astro - Ship Less JavaScript
 description: There's a simple secret to building a faster website — just ship less.
 tags:
   - astro
-  - jam-stack
+  - qq
 author: Fred K. Schott
 authorTwitter: FredKSchott
 date: 2021-12-08T08:10:40.636Z
