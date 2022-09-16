@@ -36,7 +36,7 @@ def main():
             target_path =floder_path+'\\'+i[1].split("\\")[-1]
             shutil.copyfile(i[1], target_path)    #拷贝图片
 #             print(target_path)
-            s="\\assets\\"+floder_name+"\\"+i[1].split("\\")[-1]
+            s="/assets/"+floder_name+"/"+i[1].split("\\")[-1]
             lines=lines.replace(i[1],s)
 
              
