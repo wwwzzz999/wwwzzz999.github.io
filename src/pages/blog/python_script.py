@@ -12,7 +12,7 @@ def main():
         print(inf)
         floder_name =inf.split('\\')[-1].split('.')[0]
         #生成文件夹地址+
-        floder_path ='D:\\Demo\Blog\\astro-ink\\src\\pages\\blog\\blog_imgs\\'+floder_name
+        floder_path ='D:\\Demo\\Blog\\astro-ink\\public\\assets'+floder_name
         if not os.path.exists(floder_path):  # 创建新文件夹
             os.makedirs(floder_path)
         pass
@@ -36,7 +36,7 @@ def main():
             target_path =floder_path+'\\'+i[1].split("\\")[-1]
             shutil.copyfile(i[1], target_path)    #拷贝图片
 #             print(target_path)
-            s="blog_imgs\\"+floder_name+"\\"+i[1].split("\\")[-1]
+            s="assets\\"+floder_name+"\\"+i[1].split("\\")[-1]
             lines=lines.replace(i[1],s)
 
              
