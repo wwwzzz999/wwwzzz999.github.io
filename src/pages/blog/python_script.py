@@ -12,7 +12,7 @@ def main():
         print(inf)
         floder_name =inf.split('\\')[-1].split('.')[0]
         #生成文件夹地址+
-        floder_path ='D:\\Demo\\Blog\\astro-ink\\public\\assets'+floder_name
+        floder_path ='D:\\Demo\\Blog\\astro-ink\\public\\assets\\'+floder_name
         if not os.path.exists(floder_path):  # 创建新文件夹
             os.makedirs(floder_path)
         pass
