@@ -1,8 +1,8 @@
 ---
 layout: $/layouts/post.astro
-title: Docker笔记
-date: 2022-09-16
-description: docker笔记
+title: docker笔记
+date: 2022-09-08
+description: docker
 tags:
 - docker
 ---
@@ -29,7 +29,7 @@ tags:
 4. 虚拟机系统（centos）
 5. 运行软件服务（mysql，redis，。。。）
 
-![image-20220708134053364](blog_imgs\Docker笔记\image-20220708134053364.png)
+![image-20220708134053364](\assets\Docker笔记\image-20220708134053364.png)
 
 虚拟内存→虚拟物理内存→真正物理内存
 
@@ -44,11 +44,11 @@ docker：
 3. docker引擎
 4. 运行服务软件 （mysql，redis，。。。。）
 
-![image-20220708134103957](blog_imgs\Docker笔记\image-20220708134103957.png)
+![image-20220708134103957](\assets\Docker笔记\image-20220708134103957.png)
 
 虚拟内存 → 真正物理内存
 
-![image-20220708203737387](blog_imgs\Docker笔记\image-20220708203737387.png)
+![image-20220708203737387](\assets\Docker笔记\image-20220708203737387.png)
 
 1. docker引擎对比 传统的虚拟机更加轻量，不需要guest os（centos，。。），本质上都是虚拟化技。
 
@@ -144,7 +144,7 @@ usermod -aG docker $USER
 
 
 
-![image-20220710205456111](blog_imgs\Docker笔记\image-20220710205456111.png)
+![image-20220710205456111](\assets\Docker笔记\image-20220710205456111.png)
 
 
 
@@ -175,11 +175,11 @@ sudo systemctl restart docker
 docker run hello-world
 ```
 
-	![image-20220711133505733](blog_imgs\Docker笔记\image-20220711133505733.png)
+	![image-20220711133505733](\assets\Docker笔记\image-20220711133505733.png)
 
 
 
-![image-20220711134148999](blog_imgs\Docker笔记\image-20220711134148999.png)
+![image-20220711134148999](\assets\Docker笔记\image-20220711134148999.png)
 
 
 
@@ -197,7 +197,7 @@ docker 辅助命令：
 docker version
 ```
 
-![image-20220712152235927](blog_imgs\Docker笔记\image-20220712152235927.png)
+![image-20220712152235927](\assets\Docker笔记\image-20220712152235927.png)
 
 2. 查看docker引擎详细信息
 
@@ -217,7 +217,7 @@ docker info
 docker image ls   或者  docker images
 ```
 
-![image-20220712152808501](blog_imgs\Docker笔记\image-20220712152808501.png)
+![image-20220712152808501](\assets\Docker笔记\image-20220712152808501.png)
 
 ``` 
 REPOSITORY(镜像名称) TAG(版本) IMAGE ID(镜像id) CREATED(官方镜像创建时间)  SIZE
@@ -287,13 +287,13 @@ docker ps -a
 docker run tomcat
 ```
 
-![image-20220713154213490](blog_imgs\Docker笔记\image-20220713154213490.png)
+![image-20220713154213490](\assets\Docker笔记\image-20220713154213490.png)
 
 
 
 容器已经运行,不可结束.
 
-![image-20220713154255263](blog_imgs\Docker笔记\image-20220713154255263.png)
+![image-20220713154255263](\assets\Docker笔记\image-20220713154255263.png)
 
 复制新的会话窗口进行操作
 
@@ -316,11 +316,11 @@ docker -p8080:8080 -d tomcat:8.0
 docker run -d -p 8080:8080 --name tomcat01(唯一) tomcat:8.0 ///参数无先后顺序
 ```
 
-![image-20220713211758652](blog_imgs\Docker笔记\image-20220713211758652.png)
+![image-20220713211758652](\assets\Docker笔记\image-20220713211758652.png)
 
 ps:网络防火墙不可以关闭
 
-![image-20220713205514533](blog_imgs\Docker笔记\image-20220713205514533.png)
+![image-20220713205514533](\assets\Docker笔记\image-20220713205514533.png)
 
 
 
@@ -369,11 +369,11 @@ docker exec -it(交互模式) id|name bash   ///进入容器的bash窗口进行�
 
 ```
 
-![image-20220714151053240](blog_imgs\Docker笔记\image-20220714151053240.png)
+![image-20220714151053240](\assets\Docker笔记\image-20220714151053240.png)
 
 默认进入tomcat 安装目录
 
-![image-20220714151435793](blog_imgs\Docker笔记\image-20220714151435793.png)
+![image-20220714151435793](\assets\Docker笔记\image-20220714151435793.png)
 
 8. 退出容器
 
@@ -446,7 +446,7 @@ docker run -v 宿主机路径:容器内路径:ro
 注意: 这种方式会将容器路径的原始内容全部清空,始终以宿主机路径为主
 ```
 
-![image-20220714211049428](blog_imgs\Docker笔记\image-20220714211049428.png)
+![image-20220714211049428](\assets\Docker笔记\image-20220714211049428.png)
 
 + **使用别名方式设置数据卷(核心)**
 
@@ -492,7 +492,7 @@ docker save 镜像名:Tag -o 镜像名-tag(推荐的命名格式).tar
 docker load -i tomcat-8.0.tar(镜像名)
 ````
 
-![image-20220915193855607](blog_imgs\Docker笔记\image-20220915193855607.png)
+![image-20220915193855607](\assets\Docker笔记\image-20220915193855607.png)
 
 
 
@@ -570,7 +570,7 @@ docker load -i tomcat-8.0.tar(镜像名)
 
    
 
-   ![image-20220722181016103](blog_imgs\Docker笔记\image-20220722181016103.png)
+   ![image-20220722181016103](\assets\Docker笔记\image-20220722181016103.png)
 
    2) 备份指定库
 
@@ -584,7 +584,7 @@ docker load -i tomcat-8.0.tar(镜像名)
 
    加入指定参数 : --no-data
 
-   ![image-20220722182740921](blog_imgs\Docker笔记\image-20220722182740921.png)
+   ![image-20220722182740921](\assets\Docker笔记\image-20220722182740921.png)
 
    4）使用mysql远程连接软件（navicat） 备份数据
 
@@ -596,7 +596,7 @@ docker load -i tomcat-8.0.tar(镜像名)
 
 容器间的通讯是必须的
 
-![image-20220723112238362](blog_imgs\Docker笔记\image-20220723112238362.png)
+![image-20220723112238362](\assets\Docker笔记\image-20220723112238362.png)
 
 
 
@@ -606,7 +606,7 @@ docker load -i tomcat-8.0.tar(镜像名)
 
 在创建容器后,同时会创建一对veth pair 接口
 
-![image-20220915193808981](blog_imgs\Docker笔记\image-20220915193808981.png)
+![image-20220915193808981](\assets\Docker笔记\image-20220915193808981.png)
 
 3.docker 默认创建的所有容器都连接在docker0 网桥上,默认在docker0上的容器都可以通过ip进行通讯, 也可以通过容器名进行通讯 (需要自定义网桥不能使用默认的docker0)
 
