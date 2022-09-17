@@ -24,4 +24,4 @@ netlify
 #blog模板template.md
 src/pages/blog/template.md
 src/pages/blog/拖入md文件.bat
-/src/pages/blog/python_script.py
+src/pages/blog/python_script.py
