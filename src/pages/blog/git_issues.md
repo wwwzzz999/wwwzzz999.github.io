@@ -12,7 +12,7 @@ description: git设置忽略不生效
 
 
 
-# 关于git 设置.gitignore规则不生效可能的问题
+# 关于git设置.gitignore规则不生效可能的问题
 
 .gitignore只能忽略那些原来没有被 track 的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。
 
